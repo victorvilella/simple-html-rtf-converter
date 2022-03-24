@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="sautinsoft.htmltortf" Version="8.2.12.7" />
+      <PackageReference Include="sautinsoft.rtftohtml" Version="7.6.6.17" />
+    </ItemGroup>
+
+
+</Project>
