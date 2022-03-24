@@ -19,6 +19,19 @@ namespace Api.Controllers
             _rtfHtmlConverter = rtfHtmlConverter;
         }
 
+        [HttpGet("/")]
+        public async Task<IActionResult> HelloWorldAsync(CancellationToken cancellationToken)
+        {
+            try
+            {
+                return Ok("Hello world");
+            }
+            catch (Exception e)
+            {
+                return Problem(e.Message);
+            }
+        }
+
         [HttpPost("to_html", Name = "Converts RTF string to HTML")]
         [Consumes("text/plain")]
         public async Task<IActionResult> ToHtmlAsync(CancellationToken cancellationToken)
